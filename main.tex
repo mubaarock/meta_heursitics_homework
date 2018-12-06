@@ -1,0 +1,112 @@
+\documentclass[conference,a4paper,twocolumn]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+%\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\usepackage{algorithm, algorithmic}
+\usepackage{cite}
+\usepackage{subfig}
+\usepackage{array}
+\usepackage{fixltx2e}
+\usepackage{stfloats}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[noend]{algpseudocode}
+
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+\usepackage{balance}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\title{A Tabu Search based Routing Algorithm for self reconfigurable Time Sensitive Networks}
+
+\author{
+	\IEEEauthorblockN{Mubarak Adetunji Ojewale}
+	\IEEEauthorblockA{CISTER Research Centre, ISEP, Polytechnic Institute of Porto, Portugal \\
+	Email: \{mkaoe@isep.ipp.pt}
+}
+
+
+\newcommand{\Offset}[1]{O_{#1}}
+\newcommand{\Period}[1]{T_{#1}}
+\newcommand{\Wcet}[1]{C_{#1}}
+\newcommand{\Deadline}[1]{D_{#1}}
+\newcommand{\hep}[1]{\operatorname{hep}(#1)}
+\newcommand{\lep}[1]{\operatorname{lep}(#1)}
+\newcommand{\hp}[1]{\operatorname{hp}(#1)}
+\newcommand{\lp}[1]{\operatorname{lp}(#1)}
+\newcommand{\priority}[1]{\operatorname{pr}(#1)}
+\newcommand{\speed}{\operatorname{sp}}
+
+\newcommand{\equals}{\stackrel{\mathrm{def}}{=}}
+\newcommand{\timeres}{\Gamma_{res}}
+\newcommand{\pluseq}{\mathrel{+}=}
+
+\maketitle
+
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+%\begin{IEEEkeywords}
+%Wireless industrial networks; WSN; demand bound function; DBF; forced-forward, FF-DBF
+%\end{IEEEkeywords}
+
+\section{Introduction}
+\label{sec:intro}
+\input{sections/introduction.tex}
+%
+\section{Problem Definition}
+\label{sec:problem}
+\input{sections/problem_statement.tex}
+%
+\section{Approach}
+\label{sec:preemption}
+\input{sections/approach.tex}
+%
+%\section{Feasibility of Multi-level Preemption and Recommendations}
+%\label{sec:feasibility}
+%\input{sections/feasibility.tex}
+%
+\section{Expected Results and Conclusion}
+\label{sec:conclusion}
+\input{sections/conclusion.tex}
+%
+\section*{Acknowledgment}
+\label{sec:acknowledgment}
+\input{sections/acknowledgment.tex}
+
+%% Either use bibtex (recommended), 
+\bibliographystyle{IEEEtran}
+\bibliography{main_biblio} 
+
+\balance 
+
+\end{document}
